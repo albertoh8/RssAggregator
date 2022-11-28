@@ -1,4 +1,4 @@
-package com.albertoherjim.rssaggregator.data.api
+package com.albertoherjim.rssaggregator.data.remote.api
 
 import retrofit2.Response
 import retrofit2.http.GET

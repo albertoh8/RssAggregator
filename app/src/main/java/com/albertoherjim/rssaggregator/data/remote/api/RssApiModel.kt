@@ -1,4 +1,4 @@
-package com.albertoherjim.rssaggregator.data.api
+package com.albertoherjim.rssaggregator.data.remote.api
 
 import org.simpleframework.xml.*
 

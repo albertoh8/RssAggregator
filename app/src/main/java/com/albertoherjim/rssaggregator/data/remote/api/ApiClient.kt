@@ -1,8 +1,7 @@
-package com.albertoherjim.rssaggregator.data.api
+package com.albertoherjim.rssaggregator.data.remote.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory
-import retrofit2.create
 
 class ApiClient {
 
