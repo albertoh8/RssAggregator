@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RssAggregator</string>
+    <string name="all_rss">Todos los Rss</string>
+    <string name="manage">Gestión de Rss</string>
+    <string name="profile">Perfil</string>
+
+    <string name="feed_label">fragment_rss_feed</string>
+    <string name="manage_label">fragment_rss_managment</string>
+    <string name="profile_label">fragment_rss_profile</string>
 </resources>
