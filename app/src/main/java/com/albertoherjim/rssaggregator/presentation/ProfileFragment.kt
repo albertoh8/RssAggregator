@@ -1,10 +1,8 @@
 package com.albertoherjim.rssaggregator.presentation
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.albertoherjim.rssaggregator.R
 import com.albertoherjim.rssaggregator.databinding.FragmentProfileBinding
 

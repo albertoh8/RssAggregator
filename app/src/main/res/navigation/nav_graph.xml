@@ -26,7 +26,12 @@
         android:id="@+id/managment_rss_fragment"
         android:name="com.albertoherjim.rssaggregator.presentation.RssManagmentFragment"
         android:label="@string/manage_label"
-        tools:layout="@layout/fragment_rss_managment"/>
+        tools:layout="@layout/fragment_rss_managment">
+
+        <action
+            android:id="@+id/action_to_bottom_sheet"
+            app:destination="@+id/bottom_sheet"/>
+    </fragment>
 
     <fragment
         android:id="@+id/profile_fragment"
@@ -34,4 +39,9 @@
         android:label="@string/profile_label"
         tools:layout="@layout/fragment_profile"/>
 
+    <dialog
+        android:id="@+id/bottom_sheet"
+        android:name="com.albertoherjim.rssaggregator.presentation.RssBottomSheetFragment">
+
+    </dialog>
 </navigation>
