@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/default_margin"
@@ -12,60 +12,66 @@
         android:id="@+id/name"
         android:layout_width="@dimen/buttom_size_l"
         android:layout_height="@dimen/buttom_size_s"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_margin"
+        android:paddingTop="@dimen/default_margin"
         android:text="@string/insert_name"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_xs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/insert_name"
-        android:layout_width="@dimen/buttom_size_xxl"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/buttom_size_s"
-        android:layout_marginLeft="@dimen/margin_m"
-        android:hint="@string/insert_name"
+        android:layout_marginLeft="@dimen/margin_xl"
+        android:textAlignment="center"
         android:textSize="@dimen/text_inputh_s"
         app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textAlignment="center"/>
+        app:layout_constraintTop_toTopOf="@id/name" />
 
     <TextView
         android:id="@+id/url"
         android:layout_width="@dimen/buttom_size_l"
         android:layout_height="@dimen/buttom_size_s"
         android:layout_marginTop="@dimen/margin_s"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name"
+        android:paddingTop="@dimen/default_margin"
         android:text="@string/insert_url"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_xs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
     <EditText
         android:id="@+id/insert_url"
-        android:layout_width="@dimen/buttom_size_xxl"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/buttom_size_s"
-        android:hint="@string/insert_url"
+        android:layout_marginLeft="@dimen/margin_xl"
+        android:textAlignment="center"
         android:textSize="@dimen/text_inputh_s"
         app:layout_constraintStart_toStartOf="@+id/insert_name"
-        app:layout_constraintTop_toTopOf="@+id/url"
-        android:textAlignment="center"/>
-    
+        app:layout_constraintTop_toTopOf="@+id/url" />
+
     <Button
-        android:id="@+id/boton_guardar"
+        android:id="@+id/bottom_cancel"
         android:layout_width="@dimen/buttom_size_xxl"
         android:layout_height="@dimen/buttom_size_l"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/url"
-        android:layout_marginTop="@dimen/margin_s"
-        android:text="@string/save"
-        android:textSize="@dimen/text_size_xs"/>
-    <Button
-        android:id="@+id/boton_eliminar"
-        android:layout_width="@dimen/buttom_size_xxl"
-        android:layout_height="@dimen/buttom_size_l"
-        app:layout_constraintStart_toStartOf="@+id/boton_guardar"
-        app:layout_constraintTop_toBottomOf="@id/boton_guardar"
+        android:layout_marginLeft="@dimen/margin_m"
         android:layout_marginTop="@dimen/margin_s"
         android:text="@string/cancel"
-        android:textSize="@dimen/text_size_xs"/>
+        android:textSize="@dimen/text_size_s"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/url" />
+
+    <Button
+        android:id="@+id/bottom_save"
+        android:layout_width="@dimen/buttom_size_xxl"
+        android:layout_height="@dimen/buttom_size_l"
+        android:layout_marginRight="@dimen/margin_l"
+        android:text="@string/save"
+        android:textSize="@dimen/text_size_s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottom_cancel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

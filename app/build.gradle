@@ -32,12 +32,20 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+
+
     }
     viewBinding {
         enabled = true
     }
 
+
+
+
+
+
 }
+
 
 dependencies {
 
@@ -76,6 +84,7 @@ dependencies {
 
     //Material
     implementation 'com.google.android.material:material:1.7.0'
+    
 
     //ViewModel LiveData
     def lifecycle_version = "2.6.0-alpha03"

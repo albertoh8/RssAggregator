@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">RssAggregator</string>
-    <string name="all_rss">Todos los Rss</string>
-    <string name="manage">Gestión de Rss</string>
+    <string name="rss">Mis Rss</string>
+    <string name="add_rss">Añadir Rss</string>
+    <string name="manage">Gestión</string>
     <string name="profile">Perfil</string>
-
     <string name="feed_label">fragment_rss_feed</string>
     <string name="manage_label">fragment_rss_managment</string>
     <string name="profile_label">fragment_rss_profile</string>
+    <string name="bottom_sheet_label">fragment_bottom_sheet</string>
+    <string name="name">Nombre</string>
+    <string name="url">Url</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="insert_name">Nombre: </string>
+    <string name="insert_url">URL: </string>
+
+
+
 </resources>

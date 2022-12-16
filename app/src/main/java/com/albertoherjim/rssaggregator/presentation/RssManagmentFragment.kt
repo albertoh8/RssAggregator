@@ -5,20 +5,18 @@ import android.view.*
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.findNavController
 import com.albertoherjim.rssaggregator.R
 import com.albertoherjim.rssaggregator.databinding.FragmentRssManagmentBinding
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class RssManagmentFragment : Fragment() {
 
     private var binding: FragmentRssManagmentBinding? = null
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -30,18 +28,7 @@ class RssManagmentFragment : Fragment() {
         return binding?.root
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.toolbar_menu, menu)
-
-    }
-
-    fun setupView() {
-        binding?.root.apply {
-
-        }
-    }
-
-    fun navToBottomSheet() {
-        findNavController().navigate(RssManagmentFragmentDirections.actionToBottomSheet())
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 }
