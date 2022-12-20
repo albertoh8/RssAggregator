@@ -12,7 +12,6 @@ class RssFeedFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -23,12 +22,5 @@ class RssFeedFragment : Fragment() {
         binding = FragmentRssFeedBinding.inflate(inflater)
         return inflater.inflate(R.layout.fragment_rss_feed, container, false)
     }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.toolbar_menu, menu)
-
-    }
-
-
 
 }

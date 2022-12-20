@@ -14,6 +14,7 @@ import com.albertoherjim.rssaggregator.NavGraphDirections
 import com.albertoherjim.rssaggregator.data.local.db.RssDbLocalDataSource
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setupBinding()
         setupNavigation()
-
+        setupToolbar()
     }
 
     private fun setupBinding() {
@@ -75,6 +76,5 @@ class MainActivity : AppCompatActivity() {
         val bottomSheet = RssBottomSheetFragment()
         bottomSheet.show(supportFragmentManager, bottomSheet.tag)
     }
-
 
 }

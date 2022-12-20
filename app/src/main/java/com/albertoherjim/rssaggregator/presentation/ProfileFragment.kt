@@ -8,12 +8,10 @@ import com.albertoherjim.rssaggregator.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
 
-    private var  binding:FragmentProfileBinding? = null
+    private var binding: FragmentProfileBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
-
     }
 
     override fun onCreateView(
@@ -26,9 +24,5 @@ class ProfileFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.toolbar_menu, menu)
-
-    }
 
 }
