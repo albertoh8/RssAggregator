@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Text Input Width
+    <dimen name="text_inputw_xs">16dp</dimen>
+    <dimen name="text_inputw_s">24dp</dimen>
+    <dimen name="text_inputw_m">32dp</dimen>
+    <dimen name="text_inputw_l">40dp</dimen>
+    <dimen name="text_inputw_xl">50dp</dimen>
+
+    //Text Input Height
+    <dimen name="text_inputh_xs">8dp</dimen>
+    <dimen name="text_inputh_s">12dp</dimen>
+    <dimen name="text_inputh_m">16dp</dimen>
+    <dimen name="text_inputh_l">20dp</dimen>
+    <dimen name="text_inputh_xl">25dp</dimen>
+
+    //Margin
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="margin_s">20dp</dimen>
+    <dimen name="margin_m">36dp</dimen>
+    <dimen name="margin_l">50dp</dimen>
+    <dimen name="margin_xl">80dp</dimen>
+
+    //Button
+    <dimen name="buttom_size_xs">32dp</dimen>
+    <dimen name="buttom_size_s">46dp</dimen>
+    <dimen name="buttom_size_m">58dp</dimen>
+    <dimen name="buttom_size_l">70dp</dimen>
+    <dimen name="buttom_size_xl">84dp</dimen>
+    <dimen name="buttom_size_xxl">140dp</dimen>
+
+    //Text
+    <dimen name="text_size_xs">16sp</dimen>
+    <dimen name="text_size_s">20sp</dimen>
+    <dimen name="text_size_m">26sp</dimen>
+    <dimen name="text_size_l">32sp</dimen>
+    <dimen name="text_size_xl">48sp</dimen>
+
+</resources>

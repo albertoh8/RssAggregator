@@ -4,7 +4,7 @@
     <item
         android:id="@+id/rss"
         android:icon="@drawable/ic_all_rss"
-        android:title="@string/all_rss" />
+        android:title="@string/rss" />
 
     <item
         android:id="@+id/manage"
